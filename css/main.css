@@ -1,0 +1,199 @@
+/**
+ * Every step element has one of three classes: `future`, `present` and `past`.
+ * Only one current step has the `present` class.
+ * When a step is shown (selected) its element gets the class of "active" and
+ * the body element gets the class `impress-on-ID` where ID is the step's id.
+  @c1: #76a7fa;
+  @c2: #e46f61;
+  @c3: #4dbfd9;
+  @c4: #fbcb43;
+  @c5: #8cc474;
+  @c6: #bc5679;
+  @c7: #6f85bf;
+  @c8: #f9b256;
+
+
+  @bluejeans-dark: #4A89DC;
+  @bluejeans-light: #5D9CEC;
+
+  @aqua-dark: #3BAFDA;
+  @aqua-light: #4FC1E9;
+
+  @mint-dark: #37BC9B;
+  @mint-light: #48CFAD;
+
+  @grass-dark: #8CC152;
+  @grass-light: #A0D468;
+
+  @sunflower-dark: #F6BB42;
+  @sunflower-light: #FFCE54;
+
+  @bittersweet-dark: #E9573F;
+  @bittersweet-light: #FC6E51;
+
+  @grapefruit-dark: #DA4453;
+  @grapefruit-light: #ED5565;
+
+  @lavender-dark: #967ADC;
+  @lavender-light: #AC92EC;
+
+  @pinkrose-dark: #D770AD;
+  @pinkrose-light: #EC87C0;
+
+  @lightgray-dark: #E6E9ED;
+  @lightgray-light: #F5F7FA;
+
+  @mediumgray-dark: #AAB2BD;
+  @mediumgray-light: #CCD1D9;
+
+  @darkgray-dark: #434A54;
+  @darkgray-light: #656D78;
+ */
+
+ body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+ }
+
+ pre {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 30px;
+  line-height: 1;
+  color: #37BC9B;
+ }
+
+ code {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  color: #DA4453;
+  font-size: 30px;
+  line-height: 30px;
+ }
+
+.step {
+
+}
+
+.notes {
+  display:none;
+}
+
+.step h2 {
+  font-size: 78px;
+  font-weight: bold;
+}
+
+.step .author {
+  font-size: 0.7em;
+  text-shadow: 0;
+  color: #DA4453;
+}
+
+.muted {
+  color: #888;
+}
+
+.step .min-text {
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+p {
+  margin: 20px 0;
+}
+.step .small-text {
+  font-size: 0.7em;
+  line-height: 1.3;
+}
+
+.tac {
+  text-align: center;
+}
+
+.color1 {
+  color: #76a7fa;
+}
+.color2 {
+  color: #e46f61;
+}
+.color3 {
+  color: #4dbfd9;
+}
+.color4 {
+  color: #fbcb43;
+}
+.color5 {
+  color: #8cc474;
+}
+.color6 {
+  color: #bc5679;
+}
+.color7 {
+  color: #6f85bf;
+}
+.color8 {
+  color: #f9b256;
+}
+.bgc1 {
+  background: #76a7fa;
+}
+.bgc2 {
+  background: #e46f61;
+}
+.bgc3 {
+  background: #4dbfd9;
+}
+.bgc4 {
+  background: #fbcb43;
+}
+.bgc5 {
+  background: #8cc474;
+}
+.bgc6 {
+  background: #bc5679;
+}
+.bgc7 {
+  background: #6f85bf;
+}
+.bgc8 {
+  background: #f9b256;
+}
+
+#heart {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+#heart:before, #heart:after {
+  position: absolute;
+  content: "";
+  left: 350px;
+  top: 0;
+  width: 350px;
+  height: 575px;
+  background: #E9573F;
+  border-radius: 250px 250px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin :100% 100%;
+}
